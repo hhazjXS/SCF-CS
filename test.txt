@@ -7,3 +7,4 @@ git branch：查看、添加、删除分支
 git checkout：切换分支、标签
 git merge：合并分支
 git tag：新建、查看标签
+git push origin main(分支）：把本地仓库 push 到远程仓库
