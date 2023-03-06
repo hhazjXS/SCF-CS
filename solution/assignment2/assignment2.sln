@@ -3,13 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.5.33424.131
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "project1", "project1\project1.csproj", "{045395C2-D72D-4267-A4FC-457DCFE081B9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "prime factor", "project1\prime factor.csproj", "{045395C2-D72D-4267-A4FC-457DCFE081B9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "project2", "project2\project2.csproj", "{D709C3AF-2506-4B3B-BF4A-45323368FD3F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "operate array", "project2\operate array.csproj", "{D709C3AF-2506-4B3B-BF4A-45323368FD3F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "project3", "project3\project3.csproj", "{3ACC4DE1-E7B9-4237-8A3D-EEFA74BE2830}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ehrlich", "project3\ehrlich.csproj", "{3ACC4DE1-E7B9-4237-8A3D-EEFA74BE2830}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "project4", "project4\project4.csproj", "{2DB4FABC-0DA2-4645-996C-D2C59BF6287A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "toeplitz matrix", "project4\toeplitz matrix.csproj", "{2DB4FABC-0DA2-4645-996C-D2C59BF6287A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

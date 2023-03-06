@@ -4,13 +4,14 @@ namespace toeplitz
 {
     class ToeplitzMatrix
     {
+        //遍历数组
         public bool isToeplitz(int[][] a)
         {
             for (int row = 0; row < a.Length; row++)
             {
                 for (int col = 0; col < a[0].Length; col++)
                 {
-                    if (row > 0 && col > 0 && a[row][col] != a[row - 1][col - 1])
+                    if (row > 0 && col > 0 && a[row][col] != a[row - 1][col - 1])//判断是否相等
                     {
                         return false;
                     }
