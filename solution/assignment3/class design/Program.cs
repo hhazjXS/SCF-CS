@@ -25,7 +25,7 @@ namespace Shapes
     //接口的名字前最好加一个大写的I
     public interface IShape
     {
-        double Area { get; } // 只读面积
+        double Area { get; } // 只读面积，之后不能修改
         bool IsValid(); // 判断形状是否合法
     }
 

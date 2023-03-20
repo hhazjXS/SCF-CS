@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.33424.131
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "add ForEach", "add ForEach\add ForEach.csproj", "{156B7B6D-287B-49E4-A4C7-770C3C3D6C7D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "clock event", "clock event\clock event.csproj", "{48435804-42C4-47F4-8D54-0C6062B4361C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{156B7B6D-287B-49E4-A4C7-770C3C3D6C7D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{156B7B6D-287B-49E4-A4C7-770C3C3D6C7D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{156B7B6D-287B-49E4-A4C7-770C3C3D6C7D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{156B7B6D-287B-49E4-A4C7-770C3C3D6C7D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{48435804-42C4-47F4-8D54-0C6062B4361C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{48435804-42C4-47F4-8D54-0C6062B4361C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{48435804-42C4-47F4-8D54-0C6062B4361C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{48435804-42C4-47F4-8D54-0C6062B4361C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {BF4857FC-96AB-45AC-9C3D-8D91AC7FE73B}
+	EndGlobalSection
+EndGlobal
