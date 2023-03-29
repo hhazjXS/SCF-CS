@@ -37,8 +37,15 @@ namespace OrderManagement
         public DateTime CreateTime { get; }//用于确定订单创建时间
         public int OrderNumber { get; set; } // 订单号
         public string CustomerName { get; set; } // 客户名称
-        public List<OrderDetails> Details { get; set; } // 订单明细
+        public List<OrderDetails> Details { get; set; } // 订单明细  (这个其实不是属性，属于字段！！！！！！！）
         public double TotalPrice => Details.Sum(d => d.Price * d.Quantity); // 订单总价
+
+        /*
+        public double TotalPrice
+        {
+            get=>Details.Sum(d=>d.Price * d.Quantity);
+        }
+        */
 
         //Order默认构造函数,确定订单创建时间
         public Order()
@@ -64,6 +71,9 @@ namespace OrderManagement
                 return 1;
             }
             return this.TotalPrice.CompareTo(other.TotalPrice);
+
+            //代码简化
+            //return (other==null)?1:this.TotalPrice.CompareTo(other.TotalPrice);
         }
 
         public override string ToString()
@@ -80,7 +90,7 @@ namespace OrderManagement
         // 添加订单
         public void AddOrder(Order order)
         {
-            if (orders.Contains(order))
+            if (orders.Contains(order))//调用Equals遍历List判断是否有相同的订单
             {
                 throw new ArgumentException($"Order {order.OrderNumber} already exists.");
             }
@@ -207,9 +217,9 @@ namespace OrderManagement
                 CustomerName = "Alice",
                 Details = new List<OrderDetails>
             {
-                new OrderDetails { ProductName = "Apple", Price = 5.0, Quantity = 2 },
-                new OrderDetails { ProductName = "Banana", Price = 4.0, Quantity = 3 },
-                new OrderDetails { ProductName = "Cherry", Price = 10.0, Quantity = 1 }
+                new OrderDetails { ProductName = "P1", Price = 5.0, Quantity = 2 },
+                new OrderDetails { ProductName = "P2", Price = 4.0, Quantity = 3 },
+                new OrderDetails { ProductName = "P3", Price = 10.0, Quantity = 1 }
             }
             };
             service.AddOrder(order1);
@@ -220,9 +230,9 @@ namespace OrderManagement
                 CustomerName = "Bob",
                 Details = new List<OrderDetails>
             {
-                new OrderDetails { ProductName = "Banana", Price = 4.0, Quantity = 2 },
-                new OrderDetails { ProductName = "Cherry", Price = 10.0, Quantity = 2 },
-                new OrderDetails { ProductName = "Durian", Price = 20.0, Quantity = 1 }
+                new OrderDetails { ProductName = "P4", Price = 4.0, Quantity = 2 },
+                new OrderDetails { ProductName = "P5", Price = 10.0, Quantity = 2 },
+                new OrderDetails { ProductName = "P6", Price = 20.0, Quantity = 1 }
             }
             };
             service.AddOrder(order2);
@@ -255,3 +265,11 @@ namespace OrderManagement
 
 
 
+/*
+ *分离各个类，不要写一起
+ *定义一个集合最好先初始化
+ *字段一般是private，安全问题：private readonly List<OrderDetails>Details=new List<OrderDetails>();
+ *readonly 设置成只读属性
+ *属性一般是public，供外界调用
+ *一般类把构造函数写上
+ */
