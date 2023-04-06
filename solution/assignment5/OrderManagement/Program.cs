@@ -37,7 +37,7 @@ namespace OrderManagement
         public DateTime CreateTime { get; }//用于确定订单创建时间
         public int OrderNumber { get; set; } // 订单号
         public string CustomerName { get; set; } // 客户名称
-        public List<OrderDetails> Details { get; set; } // 订单明细  (这个其实不是属性，属于字段！！！！！！！）
+        public List<OrderDetails> Details /*{ get; set; }*/ // 订单明细  (这个其实不是属性，属于字段！！！！！！！）
         public double TotalPrice => Details.Sum(d => d.Price * d.Quantity); // 订单总价
 
         /*
